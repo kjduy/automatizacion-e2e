@@ -47,7 +47,6 @@ Thumbs.db
 /*.pyc
 
 # Build or packaging files
-*.jar
 *.war
 *.ear
 
