@@ -1,0 +1,65 @@
+# Build files
+/target/
+/build/
+/out/
+
+# Serenity reports
+/serenity/
+/serenity-results/
+/serenity-summary.html
+/site/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*.bak
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# IDE files
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# Local environment files
+.env
+*.local
+*.env.*
+
+# Dependency files
+/node_modules/
+/.venv/
+/venv/
+/__pycache__/
+/*.pyc
+
+# Build or packaging files
+*.jar
+*.war
+*.ear
+
+# Test report JSON files
+*.json
+*.xml
+
+# Version control system files
+.gitignore
+!.gitignore
+
+.gradle/
+build/
+history
+webdriver

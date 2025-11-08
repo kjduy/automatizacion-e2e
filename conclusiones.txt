@@ -1,0 +1,42 @@
+Hallazgos y Conclusiones
+
+1. Hallazgos:
+
+a) Interfaz de Usuario:
+- Los elementos de la interfaz son fácilmente localizables mediante selectores XPath.
+- La aplicación utiliza clases CSS dinámicas que pueden cambiar, lo que requiere selectores robustos.
+
+b) Rendimiento:
+- Las transiciones entre páginas son suaves.
+- Las actualizaciones de la interfaz son inmediatas después de las acciones, sin embargo, en algunos casos puede demorar más de lo esperado, razón por la cual se debe dar un tiempo prudente de espera.
+
+c) Funcionalidad:
+- El sistema de autenticación funciona correctamente.
+- La búsqueda de usuarios es efectiva.
+- La actualización de datos de usuario funciona según lo esperado.
+- Los mensajes de éxito son claros y visibles.
+
+d) Cambios de usuario:
+- Al momento de ingresar de forma manual a la página el usuario administrador suele cambiar.
+- En algunos casos el usuario Jasmine.Morgan no existe.
+- Se debe primero verificar que exista, si no existe, se debe crear y ahí se debe ejecutar la prueba automatizada.
+
+2. Conclusiones:
+
+a) Automatización:
+- La estructura Page Object Model facilita el mantenimiento del código.
+- Los selectores XPath son más confiables que los selectores CSS en este caso.
+- La espera explícita es necesaria para manejar elementos dinámicos.
+
+b) Mejores Prácticas:
+- Es importante implementar esperas explícitas para elementos dinámicos.
+- Los selectores deben ser lo más robustos posible.
+- La validación de mensajes de éxito debe ser parte integral de las pruebas.
+- Es recomendable manejar timeouts adecuados para acciones lentas.
+
+c) Puntos de Mejora:
+- Se podría implementar un manejo más robusto de excepciones.
+- Sería útil agregar más validaciones en cada paso.
+- Se podrían agregar escenarios de prueba negativos.
+
+Adicionalmente, el resultado se puede encontrar dentro de la carpeta "reporte" obtenido de la ejecución de la prueba automatizada.
